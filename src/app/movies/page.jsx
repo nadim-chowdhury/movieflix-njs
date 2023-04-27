@@ -19,7 +19,7 @@ export default async function Movies() {
   const data = await res.json();
   const main_data = data.titles;
 
-  console.log(main_data);
+  // console.log(main_data);
 
   return (
     <div className="flex flex-wrap justify-center py-8">
@@ -27,9 +27,9 @@ export default async function Movies() {
         const { id, type, title, synopsis } = m.jawSummary;
         const imgSrc = m.jawSummary.backgroundImage.url;
 
-        const myLoader = () => {
-          return imgSrc;
-        };
+        // const myLoader = () => {
+        //   return imgSrc;
+        // };
 
         return (
           <div key={id} className="w-80 m-4">
@@ -45,7 +45,7 @@ export default async function Movies() {
               <h3 className="text-center font-bold text-xl py-2">
                 {title.slice(0, 25)}...
               </h3>
-              <p>{synopsis}</p>
+              <p>{synopsis.slice(0, 90)}...</p>
               <button className="bg-slate-800 text-white rounded-lg my-3">
                 <Link href={`/movies/${id}`} className="px-4 py-1">
                   More
