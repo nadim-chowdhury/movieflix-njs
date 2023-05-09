@@ -64,7 +64,7 @@ export default function ContactForm() {
             name="username"
             id="username"
             placeholder="Enter your name"
-            className="text-lg px-4 py-1 rounded-md bg-slate-100"
+            className="text-lg px-4 py-1 rounded-md bg-red-100"
             value={user.username}
             onChange={handleChange}
           />
@@ -79,7 +79,7 @@ export default function ContactForm() {
             name="email"
             id="email"
             placeholder="Enter your email"
-            className="text-lg px-4 py-1 rounded-md bg-slate-100"
+            className="text-lg px-4 py-1 rounded-md bg-red-100"
             value={user.email}
             onChange={handleChange}
             required
@@ -95,7 +95,7 @@ export default function ContactForm() {
             name="phone"
             id="phone"
             placeholder="Enter your phone"
-            className="text-lg px-4 py-1 rounded-md bg-slate-100"
+            className="text-lg px-4 py-1 rounded-md bg-red-100"
             value={user.phone}
             onChange={handleChange}
           />
@@ -109,7 +109,7 @@ export default function ContactForm() {
         <textarea
           name="message"
           id="message"
-          className="text-lg px-4 py-1 rounded-md bg-slate-100"
+          className="text-lg px-4 py-1 rounded-md bg-red-100"
           rows="5"
           placeholder="Enter your message"
           value={user.message}
@@ -125,7 +125,7 @@ export default function ContactForm() {
 
           <button
             type="submit"
-            className="bg-slate-800 w-full rounded-full text-white mt-4 py-1 hover:bg-slate-600 transition duration-300"
+            className="bg-red-600 w-full rounded-full text-white mt-4 py-1 hover:bg-red-400 transition duration-300"
           >
             Submit
           </button>

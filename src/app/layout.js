@@ -20,9 +20,7 @@ export default function RootLayout({ children }) {
       <body className={mulish.className}>
         <Header />
 
-        <section className="bg-gradient-to-tr from-slate-200 to-slate-100">
-          {children}
-        </section>
+        <section>{children}</section>
 
         <Footer />
       </body>

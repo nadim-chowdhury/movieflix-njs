@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-gradient-to-tr from-slate-900 to-slate-700 text-white py-4 px-20 flex justify-between items-center relative">
+    <header className="bg-red-600 text-white py-4 px-20 flex justify-between items-center relative">
       <div className="text-3xl font-bold">
         <Link href="/">MovieFlix</Link>
       </div>
@@ -26,7 +26,7 @@ export default function Header() {
       </div>
 
       <div
-        className={`absolute top-[68px] right-16 bg-slate-800 text-white flex flex-col items-center w-28 md:block md:flex-row md:bg-transparent md:right-[215px] md:top-auto `}
+        className={`absolute top-[68px] right-16 bg-red-600 text-white flex flex-col items-center w-28 md:block md:flex-row md:bg-transparent md:right-[215px] md:top-auto `}
       >
         <Link className="p-2 md:pl-0" href="/">
           Home

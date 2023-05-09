@@ -1,9 +1,9 @@
 export default function About() {
   return (
-    <div className="h-screen flex items-center px-20 text-center py-8">
-      <div>
+    <div className="h-[80vh] flex items-center px-20 text-center py-8">
+      <div className="text-red-600">
         <h2 className="text-3xl font-bold">About Us</h2>
-        <p className="text-slate-700 text-xl font-semibold mt-4">
+        <p className="text-xl font-semibold mt-4">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod earum
           temporibus odio rem, dolores dignissimos id placeat mollitia
           consequuntur adipisci voluptatibus magnam error aperiam quam alias
