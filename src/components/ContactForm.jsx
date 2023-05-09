@@ -21,12 +21,12 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(user);
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = fetch("/api/contact", {
         method: "POST",
         headers: { Content_Type: "application/json" },
         body: JSON.stringify({
